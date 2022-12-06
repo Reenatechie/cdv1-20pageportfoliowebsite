@@ -1,0 +1,361 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  background-color: #fdf3f2;
+  scroll-behavior: smooth;
+}
+.navigation{/*----------header-------------------*/
+  background: #191980;
+  width: 100%;
+  height: 70px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ff8c00;
+  position:fixed;
+  z-index: 2;
+
+}
+
+.page__logo{
+  width: 70px;
+  height: 70px;
+  margin-left: 3rem;
+}
+
+#logo{
+  width: 70px;
+  height: 70px;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+ul li{
+  display: inline;
+  list-style-type: none;
+  padding: 0rem 1rem;
+}
+
+ul li a{
+  display: inline;
+  list-style-type: none;
+  padding: 1.3rem 0.8rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+ul li a:hover{
+  text-decoration: none;
+  color: #ff8c00;
+  background-color: #fdf3f2;
+
+}/*-----------------header end-------------------------*/
+
+hr{/*------horizontal line-----------*/
+  margin-top: -46px;
+  padding-bottom: 3rem;
+}
+
+/*-----------------home page-------------------------*/
+#main {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+#about{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 7rem;
+}
+.about-box{
+  flex-basis: 40%;
+  padding-top: 5rem;
+}
+
+#about__me h1, article h1{
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+#about__me h1:hover, article h1:hover{
+  border-bottom: 2px solid chocolate;
+}
+#about__me img{
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+#about__me img:hover{
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  border-top-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+article p{
+  text-align: justify;
+}
+p{
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+.about-box figcaption{
+  font-weight: 700;
+  font-style: italic;
+}
+/*======project section=======*/
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project article{
+  padding-bottom: 2rem;
+  margin-top: 7rem;
+
+}
+.project article h2{
+  font-size: 2rem;
+}
+.project-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.project-item img{
+  width: 200px;
+  height: 200px;
+  padding-bottom: 0.5rem;
+}
+
+/*===hobbies section===*/
+.hobbies-wrapper{
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 2rem;
+
+}
+.hobbies-wrapper .column{
+  flex-basis: 40%;
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+}
+
+.column ul{
+  display: block;
+  text-align: start;
+}
+.column ul li{
+  list-style-type: none;
+  display: block;
+  text-align: start;
+}
+.column ol{
+  display: block;
+  text-align: start;
+}
+.services article{
+  padding-top: 8rem;
+}
+
+/*======contact-link======*/
+.contact-link{
+  background-color: midnightblue;
+  color: #fdf3f2;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  margin: 3rem;
+  border-radius: 1rem;
+}
+.contact-link:hover{
+  background-color: chocolate;
+  transition: all 0.5s ease-in-out;
+}
+
+/*----------------footer------------------*/
+footer {
+  background: #1d3044;
+  width: 100%;
+  height: 80px;
+  color: #fff;
+  padding: 1rem 0rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+
+#social__mdeia__links ul{
+  display: inline;
+  list-style-type: none;
+}
+
+#social__media__links ul li{
+  display: inline;
+  list-style-type: none;
+  padding: 0rem 1rem;
+}
+
+#social__img{
+  width: 30px;
+  height: 30px;
+}
+/*======contact-page=======*/
+
+input,
+textarea {
+  padding: 0rem 0.5rem;
+  width: 300px;
+  height: 44px;
+  border-radius: 6px;
+  font-size: 1.3rem;
+}
+
+button {/*-------Submit buttons----------*/
+  padding: 0rem 0.5rem;
+  width: 320px;
+  height: 44px;
+  border-radius: 6px;
+  background: #191980;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+button:hover {
+  background: #1d3044;
+  color: #ff8c00;
+  cursor: pointer;
+}
+
+
+
+
+#contact-page{
+ margin: 4rem 0rem;
+}
+
+/*------------------media query---------------------------*/
+@media screen and (max-width:768px){
+  .navigation{
+    padding: 0rem 0rem;
+    height: 60px;
+  }
+  ul{
+    margin-right: 1.5rem;
+  }
+  ul li{
+    padding: 0rem 0.2rem;
+  }
+  ul li a{
+    display: inline;
+    list-style-type: none;
+    padding: 1.3rem 0.5rem;
+    font-size: 1.2rem;
+  }
+.page__logo{
+  margin-left: 0.8rem;
+}
+#logo{
+  width: 60px;
+  height: 65px;
+}
+  #about{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
+  }
+  .hobbies-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .column{
+    width: 100%;
+    display: flex;
+  }
+  .contact-link{
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin: 3rem;
+    border-radius: 1rem;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;
+  }
+  .footer-tag p{
+    font-size: 0.9rem;
+  }
+
+  .page__logo{
+    width: 70px;
+    float: left;
+    height: 60px;
+    margin-left: 2rem;
+    margin-top: -2px;
+  }
+
+  .column{
+    width: 100%;
+    float: left;
+    text-align: justify;
+    padding-bottom: 1rem;
+  }
+
+}
+
+@media screen and (max-width:425px){
+   ul li a{
+    padding: 1rem 0.2rem;
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  .page__logo{
+    width: 50px;
+    height: 55px;
+    margin-left: 1rem;
+    padding-top: 0.7rem;
+  }
+  #about{
+    padding: 0.5rem;
+  }
+  #logo{
+    width: 45px;
+    height: 45px;
+    line-height: 3;
+  }
+  input, textarea
+    {
+    padding: 0rem 0.5rem;
+    width: 250px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+  }
+
+  button{
+    width: 255px;
+    height: 40px;
+  }
+}
+
